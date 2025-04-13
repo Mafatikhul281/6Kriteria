@@ -66,12 +66,12 @@ def generate_stats(name):
     hash_seed = int(hashlib.md5(name.encode()).hexdigest(), 16)
     random.seed(hash_seed)
     stats = {
-        'KARBIT': random.randint(40, 100),
-        'GAY': random.randint(40, 100),
-        'SEPUH': random.randint(40, 100),
-        'CERDAS': random.randint(40, 100),
-        'Dura': random.randint(40, 100),
-        'TFight': random.randint(40, 100)
+        'KARBIT': random.randint(0, 100),
+        'GAY': random.randint(0, 100),
+        'SEPUH': random.randint(0, 100),
+        'CERDAS': random.randint(0, 100),
+        'SARAN_TEKS': random.randint(0, 100),
+        'SARAN TEKS': random.randint(0, 100)
     }
     return stats
 
